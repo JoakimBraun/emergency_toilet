@@ -30,3 +30,42 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+label {
+  display: block;
+  padding-top: 20px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+div {
+  display: inline;
+}
+
+body {
+  background-color: rgb(249, 208, 210);
+  padding: 40px;
+}
+
+.form_1 {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.8rem;
+  border: 10px solid rgb(252, 252, 252);
+  border-radius: 40px;
+  padding-bottom: 20px;
+}
+
+.du_gjorde {
+  padding: 40px;
+}
+
+fieldset {
+  background-color: red;
+}

@@ -75,8 +75,5 @@ function handleSubmit(e) {
   sumWhat.textContent = formData.get("beskrivelse");
   sumHow.textContent = formData.get("farlighed");
 
-  sumRecomend.textContent = formData.get("amount");
+  sumRecomend.textContent = formData.getAll("amount").join("yes", "no");
 }
-// Lidt anderledes, fordi der jo kan være flere checkboxe, list alle sammen, med , imellem
-//   sumja.textContent = formData.getAll("amount").join(", ")
-// }

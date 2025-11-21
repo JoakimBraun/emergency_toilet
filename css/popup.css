@@ -1,0 +1,15 @@
+[popover] {
+  opacity: 0;
+  rotate: 360deg;
+  transition: 0.5s allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+  rotate: none;
+
+  @starting-style {
+    opacity: 0;
+    rotate: -360deg;
+  }
+}

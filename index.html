@@ -57,7 +57,7 @@
             på tronen. Løsningerne kan enten vurderes til at være gale eller geniale, men det op til den enkeltes
             vurdering.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
         </div>
       </article>
       <article class="daily_card">
@@ -70,7 +70,7 @@
             toiletpapir eller ej? Hvis ja, så kan du fortælle os om din oplevelse her og fortælle om hvordan du løste
             det.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <a href="register.html" class="cta_btn">Fortæl os mere her</a>
         </div>
       </article>
       <!-- <article class="daily_card">
@@ -87,30 +87,91 @@
     </section>
     <section id="breaking">
       <article class="news_card">
-        <h3>NU KAN DU KOMBINERE MIDDAG OG TOILETBESØG</h3>
-        <p>En ældre dame i Jylland var trætte af der ikke blev spist op til aftensmaden, og mente derfor løsning kunne
-          være at gøre
-          plads til mere under maden.</p>
-        <img src="nyheder_billeder/middag-toilet.png" alt="middag-toilet" />
-        <a class="cta_btn" href="">Læs mere</a>
-      </article>
+        <div popover id="popup">
+          <h3>NU KAN DU KOMBINERE MIDDAG OG TOILETBESØG</h3>
+          <p>En ældre dame fra det midtjyske har fået nok af halvspiste kartofler og madspild ved aftensbordet. Hendes
+            løsning? At
+            bogstaveligt talt skabe mere plads under måltiderne.
 
+            Damen har nemlig slået to fluer med ét klap og kombineret toilet og spisebord i én og samme konstruktion.
+            Ifølge hende
+            selv giver det “en helt anden ro i kroppen, når man ved, der er styr på det hele.”
+
+            Naboerne beskriver opfindelsen som “praktisk, men måske lige lovligt offensiv,” mens familien stadig
+            diskuterer, om man
+            skal sige “velbekomme” eller “held og lykke,” før middagen går i gang.
+
+            Kommunen overvejer fortsat, om møblet skal kategoriseres som sanitet, spiseudstyr – eller kunst.</p>
+          <img src="nyheder_billeder/middag-toilet.png" alt="middag-toilet" />
+          <button popovertarget="popup">Luk nyhed</button>
+        </div>
+      </article>
+      <article class="news_card">
+        <h3>NU KAN DU KOMBINERE MIDDAG OG TOILETBESØG</h3>
+        <p>En ældre dame i Jylland var trætte af der ikke blev spist op til aftensmaden.</p>
+        <img src="nyheder_billeder/middag-toilet.png" alt="middag-toilet" />
+
+      </article>
+      <button popovertarget="popup">Læs mere</button>
+
+      <article class="news_card">
+        <div popover id="popup-2">
+          <h3>ÆLDRE KVINDE TABTE GEBIS I FYLDT TOILET</h3>
+          <p>Hold på hat, briller – og åbenbart også gebis – når du skal en tur på det lille hus. En ældre kvinde fik
+            sig nemlig
+            noget af en overraskelse, da hendes gebis tog et ufrivilligt dyk ned i et allerede godt fyldt toilet.
+
+            Ifølge kvinden selv “skulle det bare lige rettes lidt,” men ét forkert vip, og tandsættet forsvandt som en
+            ubuden ubåd i
+            dybet.
+
+            Familien forsøger stadig at afgøre, om episoden skal kategoriseres som et uheld, komik… eller en decideret
+            redningsmission. Kommunens kloakfolk har i hvert fald meldt ud, at de “gerne ser, at folk fremover holder
+            deres løse
+            dele i sikker højde.”</p>
+          <img src="nyheder_billeder/gebis.png" alt="gebis" />
+          <button popovertarget="popup-2">Luk nyhed</button>
+        </div>
+      </article>
       <article class="news_card">
         <h3>ÆLDRE KVINDE TABTE GEBIS I FYLDT TOILET</h3>
         <p>Hold på hat, briller og gebis når du skal på det store hus - tilsynladende.</p>
         <img src="nyheder_billeder/gebis.png" alt="gebis" />
-        <a class="cta_btn" href="">Læs mere</a>
+      </article>
+      <button popovertarget="popup-2">Læs mere</button>
+
+      <article class="news_card">
+        <div popover id="popup-3">
+          <h3>TOILETPAPIR ER FOR DYRT</h3>
+          <p>
+            Priserne på toiletpapir er røget så højt op, at mange danskere nu har fundet en… kreativ nødløsning. Ifølge
+            flere
+            forbrugere fungerer Ekstra Bladet “fint i en snæver vending” – og nogen hævder endda, at avisen “aldrig har
+            været mere
+            nyttig.”
+
+            En lokal borger udtaler, at det kun kræver “lidt folderi og en god håndcreme,” mens andre advarer om, at
+            sensationsoverskrifterne kan give chokeffekt på helt forkerte tidspunkter.
+
+            Supermarkederne melder om stigende efterspørgsel på aviser, mens toiletpapirproducenterne overvejer
+            prisnedsættelser for
+            at vinde bagdelen af befolkningen tilbage.
+          </p>
+          <img src="toiletpapir-dyrt/Asset 3.png" alt="for_dyrt" />
+          <button popovertarget="popup-3">Luk nyhed</button>
+        </div>
       </article>
 
       <article class="news_card">
         <h3>TOILETPAPIR ER FOR DYRT</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          magnam ducimus ea, sed minima asperiores.
+          Toiletpapir er blevet så dyrt, folk tørrer sig nu med Ekstrabladet i stedet for.
         </p>
         <img src="toiletpapir-dyrt/Asset 3.png" alt="for_dyrt" />
-        <a class="cta_btn" href="">Læs mere</a>
       </article>
+      <button popovertarget="popup-3">Læs mere</button>
+
+
     </section>
   </main>
 
@@ -141,7 +202,7 @@
     </nav>
   </footer>
   <script src="js/burger.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/dark_mode.js"></script>
 </body>
 
 </html>

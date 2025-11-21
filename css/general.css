@@ -1,3 +1,37 @@
+html,
+body,
+header,
+footer,
+main,
+nav,
+ul,
+#main-disclamer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+body {
+  font-family: var(--default-font);
+  color: var(--primary-font-color);
+  background-color: var(--primary-bg-color);
+}
+header,
+footer {
+  background-color: var(--header-background-color);
+  color: var(--secondary-font-color);
+  height: min-content;
+}
+.logo-wrapper {
+  background-color: var(--logotype-background-color);
+  color: var(--logotype-color);
+}
+
 html {
   font-family: var(--font-family-sans);
   color: var(--color-text);
@@ -6,6 +40,8 @@ html {
 
 header {
   height: min-content;
+  position: sticky;
+  top: 0;
 }
 
 #main-disclamer {
@@ -25,7 +61,7 @@ header {
 }
 
 main section {
-  padding: 20px;
+  padding: 10px;
   border-radius: var(--border-radius);
 }
 
@@ -33,7 +69,7 @@ h1 {
   font-size: var(--font-h1-size);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-inverted);
-  margin: 20px 0;
+  margin: 30px 0;
   line-height: 1.3rem;
   text-align: left;
 }
@@ -139,7 +175,7 @@ nav a {
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
   width: max-content;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .logo img {
@@ -175,21 +211,7 @@ nav a:active {
 footer a {
   font-size: 0.7rem;
 }
-
-/* dark mode */
-:root {
-  --color-heading: #000000; dark: #e0d3ff 
-  --color-text: #555; dark: #cdc7dc
-  --color-bg: #fff; dark: #222
-  
-  color: var(--color-text);
-  background-color: var(--color-bg);
-}
-
-html.dark {	
-color-scheme: dark;
-}
-
-h1 {
-  color: var(--color-heading);
+footer {
+  background-color: rgb(136, 5, 5);
+  padding-left: 10px;
 }

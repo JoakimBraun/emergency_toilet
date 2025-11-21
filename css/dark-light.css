@@ -1,0 +1,43 @@
+/* CSS Starter er tilføjet */
+html {
+  --color-heading: #5000ca;
+  --color-text: #555;
+  --color-bg: #fff;
+
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+/* Demo styles */
+body {
+  padding: 2rlh;
+}
+
+section {
+  max-inline-size: 65ch;
+  margin-inline: auto;
+  > * + * {
+    margin-block-start: 1rlh;
+  }
+}
+
+button {
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin-block: 1.5rlh;
+}

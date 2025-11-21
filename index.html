@@ -1,119 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="frontpage">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-    <section id="main-disclamer">
-      <div id="main-disclamer-content">
-        <img src="warning" alt="ICON" />
-        <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
-        </div>
-      </div>
-    </section>
-    <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
-      <section id="breaking">
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-        <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
-        </article>
-      </section>
-    </main>
 
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="frontpage">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img src="logo/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Rullen er tom</a></li>
+        <li><a class="menuItem" href="register.html">Egen oplevelse</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+  <section id="main-disclamer">
+    <div id="main-disclamer-content">
+      <!-- <img src="warning" alt="ICON" /> -->
+      <div>
+        <h1>FLERE ÆLDRE OPLEVER TOILETPROBLEMER</h1>
+        <p class="sub">Her oplyses de forskellige problemer</p>
+        <button id="toggle">Toggle</button>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="daily">
+      <article class="daily_card">
+        <img src="fihgur_billede.png" alt="figur" />
+        <div class="daily_text">
+          <h2>RULLEN ER TOM - EN ÆLDRE DAMES OVERLEVELSESGUIDE</h2>
+          <p>
+            Se hvordan en ældre dame afværger en nødsituation som at løbe tør for toiletpapir, efter at have lavet nr. 2
+            på tronen. Løsningerne kan enten vurderes til at være gale eller geniale, men det op til den enkeltes
+            vurdering.
+          </p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
+        </div>
+      </article>
+      <article class="daily_card">
+        <img src="egen oplevelse/egen-erfaring2.png" alt="egen-erfaring" />
+        <div class="daily_text">
+          <h2>EGEN ERFARING?</h2>
+          <p>
+            Kender du følelsen af at sætte sig på tronen og gøre sin ting helt uden at have orienteret sig om hvorvidt
+            der var mere
+            toiletpapir eller ej? Hvis ja, så kan du fortælle os om din oplevelse her og fortælle om hvordan du løste
+            det.
+          </p>
+          <a href="register.html" class="cta_btn">Fortæl os mere her</a>
+        </div>
+      </article>
+      <!-- <article class="daily_card">
+        <img src="toiletpapir-dyrt/Asset 3.png" alt="for_dyrt" />
+        <div class="daily_text">
+          <h2>TOILETPAPIR ER FOR DYRT</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            magnam ducimus ea, sed minima asperiores.
+          </p>
+          <a href="" class="cta_btn">Se mere</a>
+        </div>
+      </article> -->
+    </section>
+    <section id="breaking">
+      <article class="news_card">
+        <div popover id="popup">
+          <h3>NU KAN DU KOMBINERE MIDDAG OG TOILETBESØG</h3>
+          <p>En ældre dame fra det midtjyske har fået nok af halvspiste kartofler og madspild ved aftensbordet. Hendes
+            løsning? At
+            bogstaveligt talt skabe mere plads under måltiderne.
+
+            Damen har nemlig slået to fluer med ét klap og kombineret toilet og spisebord i én og samme konstruktion.
+            Ifølge hende
+            selv giver det “en helt anden ro i kroppen, når man ved, der er styr på det hele.”
+
+            Naboerne beskriver opfindelsen som “praktisk, men måske lige lovligt offensiv,” mens familien stadig
+            diskuterer, om man
+            skal sige “velbekomme” eller “held og lykke,” før middagen går i gang.
+
+            Kommunen overvejer fortsat, om møblet skal kategoriseres som sanitet, spiseudstyr – eller kunst.</p>
+          <img src="nyheder_billeder/middag-toilet.png" alt="middag-toilet" />
+          <button popovertarget="popup">Luk nyhed</button>
+        </div>
+      </article>
+      <article class="news_card">
+        <h3>NU KAN DU KOMBINERE MIDDAG OG TOILETBESØG</h3>
+        <p>En ældre dame i Jylland var trætte af der ikke blev spist op til aftensmaden.</p>
+        <img src="nyheder_billeder/middag-toilet.png" alt="middag-toilet" />
+
+      </article>
+      <button popovertarget="popup">Læs mere</button>
+
+      <article class="news_card">
+        <div popover id="popup-2">
+          <h3>ÆLDRE KVINDE TABTE GEBIS I FYLDT TOILET</h3>
+          <p>Hold på hat, briller – og åbenbart også gebis – når du skal en tur på det lille hus. En ældre kvinde fik
+            sig nemlig
+            noget af en overraskelse, da hendes gebis tog et ufrivilligt dyk ned i et allerede godt fyldt toilet.
+
+            Ifølge kvinden selv “skulle det bare lige rettes lidt,” men ét forkert vip, og tandsættet forsvandt som en
+            ubuden ubåd i
+            dybet.
+
+            Familien forsøger stadig at afgøre, om episoden skal kategoriseres som et uheld, komik… eller en decideret
+            redningsmission. Kommunens kloakfolk har i hvert fald meldt ud, at de “gerne ser, at folk fremover holder
+            deres løse
+            dele i sikker højde.”</p>
+          <img src="nyheder_billeder/gebis.png" alt="gebis" />
+          <button popovertarget="popup-2">Luk nyhed</button>
+        </div>
+      </article>
+      <article class="news_card">
+        <h3>ÆLDRE KVINDE TABTE GEBIS I FYLDT TOILET</h3>
+        <p>Hold på hat, briller og gebis når du skal på det store hus - tilsynladende.</p>
+        <img src="nyheder_billeder/gebis.png" alt="gebis" />
+      </article>
+      <button popovertarget="popup-2">Læs mere</button>
+
+      <article class="news_card">
+        <div popover id="popup-3">
+          <h3>TOILETPAPIR ER FOR DYRT</h3>
+          <p>
+            Priserne på toiletpapir er røget så højt op, at mange danskere nu har fundet en… kreativ nødløsning. Ifølge
+            flere
+            forbrugere fungerer Ekstra Bladet “fint i en snæver vending” – og nogen hævder endda, at avisen “aldrig har
+            været mere
+            nyttig.”
+
+            En lokal borger udtaler, at det kun kræver “lidt folderi og en god håndcreme,” mens andre advarer om, at
+            sensationsoverskrifterne kan give chokeffekt på helt forkerte tidspunkter.
+
+            Supermarkederne melder om stigende efterspørgsel på aviser, mens toiletpapirproducenterne overvejer
+            prisnedsættelser for
+            at vinde bagdelen af befolkningen tilbage.
+          </p>
+          <img src="toiletpapir-dyrt/Asset 3.png" alt="for_dyrt" />
+          <button popovertarget="popup-3">Luk nyhed</button>
+        </div>
+      </article>
+
+      <article class="news_card">
+        <h3>TOILETPAPIR ER FOR DYRT</h3>
+        <p>
+          Toiletpapir er blevet så dyrt, folk tørrer sig nu med Ekstrabladet i stedet for.
+        </p>
+        <img src="toiletpapir-dyrt/Asset 3.png" alt="for_dyrt" />
+      </article>
+      <button popovertarget="popup-3">Læs mere</button>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/dark_mode.js"></script>
+</body>
+
 </html>

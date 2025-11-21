@@ -1,34 +1,35 @@
 :root {
   /* Colours */
-  --color-bg: #cfceca; /* page background /*
+  --primary-bg-color: light-dark(#f9f9f7, #007bff); /* used */
+
+  --primary-font-color: #000; /* used */
+
+  --secondary-bg-color: #0088ff68; /* used */
+  --secondary-font-color: #d5e5f4; /* used */
+  --color-bg: #fbeaea; /* page background /*
 
   /* Header */
-  --color-head-bg: #625e5c;
-
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #9e0303;
   --font-logotype-size: 1rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #9d0000;
   /* Links */
-  --color-link-bg: #78766e;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
-  --border-radius-links: 1px;
-
+  --color-link-bg: #f5b0b0;
+  --color-link-hover: #000000; /* used */
+  --color-link-active: #000000; /* used */
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
-  --font-h2-size: 1rem;
+  --font-h1-size: 3rem;
+  --font-sub1-size: 1.2rem;
+  --font-h2-size: 1.2rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: #d82525;
+  --color-headline-text-page: #000000;
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: #000000;
+  --color-text-inverted: #000000;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,13 +38,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
-  --color-cta-card-bg: #d5d2d0;
+  --color-card-bg: #ffffff;
+  --color-cta-card-bg: #fffcf9;
   /* news-cards */
   --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg-inverted: #ffffff;
+  --color-cta-newscard-bg: #ffffff;
+  --color-cta-newscard-bg-inverted: #ffffff;
 
   /* Fonts */
   --font-family-sans: ui-sans-serif;
@@ -63,7 +64,97 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: #ffffff;
+  --color-infobox-1-bg: #de1e1e;
+  --color-infobox-2-bg: #ffcfcf;
+}
+
+:root {
+  /* Colours */
+  --primary-bg-color: light-dark(#fbeaea, #007bff); /* used */
+
+  --primary-font-color: #000; /* used */
+
+  --secondary-bg-color: #0088ff68; /* used */
+  --secondary-font-color: #d5e5f4; /* used */
+
+  /* CAN BE DELETED WHEN THE PLACEHOLDER CLASS IS DELETED */
+  --placeholder-bg-color: #ffffff; /* used */
+  --placeholder-font-color: #ffffff; /* used */
+
+  /* NOT USED AT THE MOMENT */
+  --info-color: #17a2b8;
+  --warning-color: #ffffff;
+  --danger-color: #dc3545;
+
+  /* Borders */
+  --border-color: #007bff; /* used */
+  --border-color-light: #f7f5c2; /* used */
+  --border-radius: 0.25rem;
+
+  /* Links */
+  --link-color: #ffffff; /* used */
+  --hover-color: #f9fcfe; /* used */
+  --active-color: #f52727; /* used */
+
+  /* From styletile */
+
+  /* Fonts */
+  --logotype-font: "Roboto", sans-serif;
+  --headline-font: "Roboto", sans-serif;
+  --body-font: "Roboto", sans-serif;
+  --link-font: "Calibri", sans-serif;
+
+  /* Text sizes */
+  --logotype-size: 1.5rem;
+  --headline1-size: 2rem;
+  --headline2-size: 1.5rem;
+  --headline3-size: 1.25rem;
+  --headline4-size: 1rem;
+  --bodytext-size: 1rem;
+  --cta-text-size: 1.25rem;
+  --followup-text-size: 0.8rem;
+  --form-submit-size: 1rem;
+
+  /* Text colors */
+  --logotype-color: #000000;
+  --headline-color: #000000;
+  --headline-color-inverted: #000000;
+  --bodytext-color: #000000;
+  --bodytext-color-inverted: #f9fcfe;
+  --cta-text-color: #ffffff;
+  --cta-text-color-inverted: #ffffff;
+  --followup-text-color: #000;
+  --followup-text-color-inverted: #bbc3ca;
+  --formfield-placeholder-color: #6f90eb;
+  --formfield-text-color: #e82424;
+  --form-submit-color: #fff;
+  --form-submit-color-inverted: #ffffff;
+
+  /* Background colors */
+  --logotype-background-color: #dadada;
+  --header-background-color: #6f90eb;
+  --article-background-color: #ffffff;
+  --news-background-color: #dbdde3;
+  --news-background-color-inverted: #eeebe9;
+  --info-background-color: #fff;
+  --headline-bg-color: #000000;
+  --headline-bg-color-alert: #ff4b00;
+  --headline-bg-color-inverted: #bc0909;
+  --bodytext-bg-color: #ffffff;
+  --bodytext-bg-color-inverted: #dbdde3;
+  --cta-text-bg-color: #dbdde3;
+  --cta-text-bg-color-inverted: #dbdde3;
+  --followup-text-bg-color: #ff0101;
+  --followup-text-bg-color-inverted: #b6b6b6;
+  --form-background-color: #fff;
+  --form-text-color: #000;
+  --formfield-background-color: #fffae2;
+  --formfield-background-color-active: #ffffff;
+  --form-submit-bg-color: #ff4b00;
+  --form-submit-bg-color-inverted: #dbdde3;
+
+  /* Info-boxes */
+  --info-bg-color-yellow: #ffffff;
+  --info-bg-color-green: #def5db;
 }

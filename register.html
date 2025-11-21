@@ -1,81 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/form.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html">
+          <img src="logo/logo.png" alt="logo">
+        </a>
+      </div>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Rullen er tom</a></li>
+        <li><a class="menuItem" href="register.html">Egen oplevelse</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>EMERGENCY! LØBET TØR FOR TOILETPAPIR</h1>
+
+    <section id="form-section">
+      <article id="form-info">
+        <h2>FORTÆL OS OM DIN OPLEVELSE:</h2>
+        <p>Grundet vores manglende erfaring vil gerne høre om din oplevelse - del din oplevelse og bliv en del af lorte
+          klubben.</p>
+      </article>
+      <form id="webform">
+        <!-- NAVN -->
+        <fieldset id="full-name">
+          <legend>FULDE NAVN</legend>
+          <div class="form-group">
+            <label for="full-name"></label>
+            <input id="fname" name="fname" type="text" placeholder="dit fulde navn" /><span></span>
+          </div>
+        </fieldset>
+
+        <!-- MAIL -->
+        <fieldset id="e-mail">
+          <legend>E-MAIL</legend>
+          <div class="form-group">
+            <label class="blok" for="email"></label>
+            <input type="email" id="email" name="email" placeholder="emailadresse@mail.dk" required /><span
+              class="fejlmeddelelse"></span>
+          </div>
+        </fieldset>
+
+        <!-- TELEFONNUMMER -->
+        <fieldset id="nummer">
+          <legend>TELEFON NUMMER</legend>
+          <div class="formcontainer">
+            <div class="form-group">
+              <label for="area-code" class="blok">Land</label>
+              <select id="area-code" name="area-code">
+                <option value="" disabled selected>Vælg</option>
+                <option value="+45">+45(DK)</option>
+                <option value="+46">+46(SE)</option>
+                <option value="+47">+47(NO)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="telefon" class="blok">Telefonnummer</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Telefonnummer" />
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- DATO -->
+        <fieldset id="dato">
+          <legend>HVORNÅR SKETE DET?</legend>
+          <div class="form-group">
+            <label for="start"></label>
+            <input type="date" id="date" name="date" value="0000-00-00" min="1990-01-01" max="2025-12-31" required />
+          </div>
+        </fieldset>
+
+        <!-- Beskrivelse (tekst) -->
+        <fieldset id="description">
+          <legend>HVAD GJORDE DU?</legend>
+          <div class="form-group">
+            <label class="blok" for="beskrivelse"></label>
+            <textarea id="beskrivelse" name="beskrivelse"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Hvor god var din løsning? (range) -->
+        <fieldset id="danger">
+          <legend>HVOR GOD VAR DIN LØSNING?</legend>
+          <label for="farlighed">Din vurdering af løsningen: <span id="range-value">0</span>%</label>
+          <input type="range" name="farlighed" id="farlighed" min="0" max="100" value="0" />
+        </fieldset>
+
+        <!-- JA/NEJ -->
+        <fieldset id="amount">
+          <legend>VIL DU ANBEFALE DIN LØSNINNG?</legend>
+          <div class="form-group">
+            <div>
+              <input type="radio" id="ja" name="text" value="ja" /><span></span>
+              <label for="ja">Ja</label>
+            </div>
+            <div>
+              <input type="radio" id="nej" name="text" value="nej" /><span></span>
+              <label for="nej">Nej</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Submit button -->
+        <button id="submit_btn" type="submit">Indsend &#8594;</button>
+      </form>
+      </form>
+    </section>
+
+    <section id="form-summary">
+      <h2>OPSUMMERING</h2>
+      <article id="sum">
+        <div>
+          <h3>Fulde navn:</h3>
+          <p id="sumName"></p>
+        </div>
+        <div>
+          <h3>E-mail:</h3>
+          <p id="sumMail"></p>
+        </div>
+        <div>
+          <h3>Telefon nummer:</h3>
+          <p id="sumNumber"></p>
+        </div>
+        <div>
+          <h3>Hvonår skete det?:</h3>
+          <p id="sumDate"></p>
+        </div>
+        <div>
+          <h3>Hvad gjorde du?:</h3>
+          <p id="sumWhat"></p>
+        </div>
+        <div>
+          <h3>Hvor god var din løsning?:</h3>
+          <p id="sumHow"></p>
+        </div>
+        <div>
+          <h3>Vil du anbefale din løsning?:</h3>
+          <p id="sumRecomend"></p>
+        </div>
+        <button id="reset_btn" type="reset">Reset</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script defer src="js/forms.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>
